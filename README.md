@@ -6,8 +6,14 @@ version: '3'
 
 
 service:
+
+
   joomladb:
+  
+  
    volumes:
+   
+   
     - mysql_storage_new:/var/lib/mysql
     restart: always
     envirnment:
@@ -17,6 +23,7 @@ service:
       MYSQL_DATABASE:mydb
       
    joolmaos:
+   
     image: joomla:3.9-php7-apache
     restart : always
     depends_on:
